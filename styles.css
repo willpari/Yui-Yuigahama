@@ -1,0 +1,132 @@
+/* Estilos generales del body */
+body {
+    /* Color de fondo lila claro para toda la página. */
+    background-color: #f8e2f8;
+}
+
+/* --- */
+
+/* Estilos de la navegación */
+.header-nav {
+    /* Fondo blanco para la barra de navegación. */
+    background-color: #ffffff;
+    /* Relleno vertical y margen inferior para separar. */
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+.header-nav ul {
+    /* Elimina estilos de lista, márgenes y rellenos predeterminados. Centra el texto. */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header-nav li {
+    /* Muestra los elementos de la lista en línea con margen entre ellos. */
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* --- */
+
+/* Estilos de la sección Inicio */
+.Inicio {
+    /* Utiliza Flexbox para organizar elementos, centrarlos verticalmente y distribuir espacio. */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margen inferior para separar secciones. */
+    margin-bottom: 40px;
+}
+
+.image-inicio img {
+    /* Imagen responsiva con ancho máximo y esquinas redondeadas. */
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.texto-inicio {
+    /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
+    border: 2px solid #f8e2f8;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Permite que el texto ocupe el espacio restante y asegura un ancho mínimo. */
+    flex: 1;
+    min-width: 300px;
+}
+
+/* --- */
+
+/* Estilos de la sección Historia (similar a la sección Inicio) */
+.Historia {
+    /* Utiliza Flexbox, centra y distribuye el espacio para sus elementos. */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margen inferior para separar secciones. */
+    margin-bottom: 40px;
+}
+
+.texto-historia {
+    /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
+    border: 2px solid #f8e2f8;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Permite que el texto ocupe el espacio restante y asegura un ancho mínimo. */
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-historia img {
+    /* Imagen responsiva con ancho máximo y esquinas redondeadas. */
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.Galería{
+    /* Utiliza Flexbox, centra y distribuye el espacio para sus elementos. */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margen inferior para separar secciones. */
+    margin-bottom: 40px;
+}
+
+.carrusel-galery{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: clip;
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: #ffffff;
+  width: 500px;
+  height: 500px;
+}
