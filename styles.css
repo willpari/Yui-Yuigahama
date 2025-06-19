@@ -69,7 +69,7 @@ body {
 /* --- */
 
 /* Estilos de la sección Historia (similar a la sección Inicio) */
-.Historia {
+.Personalidad {
     /* Utiliza Flexbox, centra y distribuye el espacio para sus elementos. */
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@ body {
     margin-bottom: 40px;
 }
 
-.texto-historia {
+.texto-Personalidad {
     display: flex;
     /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
     border: 2px solid #ffeaf3;
@@ -96,7 +96,7 @@ body {
     min-width: 300px;
 }
 
-.image-historia img {
+.image-Personalidad img {
     display: flex;
     /* Imagen responsiva con ancho máximo y esquinas redondeadas. */
     width: 100%;
@@ -106,7 +106,85 @@ body {
 }
 
 /* --- */
+.Relaciones {
+    /* Utiliza Flexbox para organizar elementos, centrarlos verticalmente y distribuir espacio. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margen inferior para separar secciones. */
+    margin-bottom: 40px;
+}
 
+.Relaciones-base{
+    /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
+    border: 2px solid #ffeaf3;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Permite que el texto ocupe el espacio restante y asegura un ancho mínimo. */
+    flex: 1;
+    min-width: 300px; 
+}
+
+.Hachiman {    
+
+}
+
+.Yukino{
+
+}
+
+.Club-Servicio{
+
+}
+
+.Momentos-Clave{
+    /* Utiliza Flexbox, centra y distribuye el espacio para sus elementos. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margen inferior para separar secciones. */
+    margin-bottom: 40px;
+}
+
+.Momentos-Clave-Base{
+    /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
+    border: 2px solid #ffeaf3;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Permite que el texto ocupe el espacio restante y asegura un ancho mínimo. */
+    flex: 1;
+    min-width: 300px; 
+}
+
+.momento1{
+
+}
+
+.momento2{
+    
+}
+
+.momento3{
+    
+}
+
+.momento4{
+    
+}
 /* Estilos de la sección Galería */
 .Galería {
     /* Utiliza Flexbox para organizar elementos, centrarlos verticalmente y distribuir espacio. */
@@ -164,8 +242,8 @@ body {
 
 .Citas {
     /* Utiliza Flexbox para organizar elementos, centrarlos verticalmente y distribuir espacio. */
-
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
     padding: 20px;
