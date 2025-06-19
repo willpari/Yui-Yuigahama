@@ -84,6 +84,7 @@ body {
 }
 
 .texto-historia {
+    display: flex;
     /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
     border: 2px solid #f8e2f8;
     padding: 20px;
@@ -96,6 +97,7 @@ body {
 }
 
 .image-historia img {
+    display: flex;
     /* Imagen responsiva con ancho máximo y esquinas redondeadas. */
     width: 100%;
     height: auto;
@@ -103,8 +105,11 @@ body {
     border-radius: 8px;
 }
 
-.Galería{
-    /* Utiliza Flexbox, centra y distribuye el espacio para sus elementos. */
+/* --- */
+
+/* Estilos de la sección Galería */
+.Galería {
+    /* Utiliza Flexbox para organizar elementos, centrarlos verticalmente y distribuir espacio. */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,34 +122,42 @@ body {
     margin-bottom: 40px;
 }
 
-.carrusel-galery{
+.carrusel-galery {
+    /* Establece un display flex para los elementos del carrusel, ocupa el 100% del ancho y oculta el contenido que se desborda. */
     display: flex;
     width: 100%;
     overflow: hidden;
 }
 
-.carousel-inner{
+.carousel-inner {
+    /* Establece un display flex, y calcula el ancho para permitir el efecto infinito del carrusel. */
     display: flex;
     width: calc(100% * 2); /* 2 o 3 veces para hacer el efecto infinito */
+    /* Aplica una animación llamada 'slide' que dura 35 segundos, es lineal y se repite infinitamente. */
     animation: slide 35s linear infinite;
 }
 
 .elemento {
+    /* Permite que el elemento se flexione, pero mantenga un tamaño base del 20% del contenedor. Incluye el padding y border en el ancho. */
     flex: 1 0 20%;
     box-sizing: border-box;
 }
 
 .elemento img {
+    /* Establece un ancho y alto fijos para las imágenes dentro del carrusel y las muestra como elementos de bloque. */
     width: 300px;
     height: 300px;
     display: block;
 }
 
+/* Define la animación 'slide' */
 @keyframes slide {
+    /* Al inicio de la animación, no hay traslación horizontal. */
     0% {
         transform: translateX(0);
     }
-    100%{
+    /* Al final de la animación, el elemento se traslada horizontalmente un 100% hacia la izquierda. */
+    100% {
         transform: translateX(-100%);
     }
 }
