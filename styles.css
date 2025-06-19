@@ -1,7 +1,7 @@
 /* Estilos generales del body */
 body {
     /* Color de fondo lila claro para toda la página. */
-    background-color: #f8e2f8;
+    background-color: #ffeaf3;
 }
 
 /* --- */
@@ -56,7 +56,7 @@ body {
 
 .texto-inicio {
     /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
-    border: 2px solid #f8e2f8;
+    border: 2px solid #ffeaf3;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -86,7 +86,7 @@ body {
 .texto-historia {
     display: flex;
     /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
-    border: 2px solid #f8e2f8;
+    border: 2px solid #ffeaf3;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -160,4 +160,47 @@ body {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.Citas {
+    /* Utiliza Flexbox para organizar elementos, centrarlos verticalmente y distribuir espacio. */
+
+    align-items: center;
+    justify-content: space-between;
+    /* Relleno, espacio entre elementos, ancho máximo y centrado horizontal. */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margen inferior para separar secciones. */
+    margin-bottom: 40px;
+}
+
+.citas-base {
+    /* Borde, relleno, fondo, esquinas redondeadas y sombra para el cuadro de texto. */
+    border: 2px solid #ffeaf3;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Permite que el texto ocupe el espacio restante y asegura un ancho mínimo. */
+    flex: 1;
+    min-width: 300px; 
+}
+
+/* Clases específicas para cada cita (HEREDAN de citas-base y puedes añadirles más) */
+.texto-citas1 {
+
+}
+
+.texto-citas2 {
+
+}
+
+.texto-citas3 {
+
+}
+
+.texto-citas4 {
+
 }
