@@ -10,9 +10,12 @@ body {
 .header-nav {
     /* Fondo blanco para la barra de navegación. */
     background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     /* Relleno vertical y margen inferior para separar. */
-    padding: 15px 0;
-    margin-bottom: 40px;
+    padding: 25px 0;
 }
 
 .header-nav ul {
